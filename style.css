@@ -7,6 +7,7 @@
 :root{
   --card-color-primary: #f7dd43 ;
   --card-title-border-color: #746615;
+  
   --bg: url(./assets/bg.svg);
 }
 body.green{
