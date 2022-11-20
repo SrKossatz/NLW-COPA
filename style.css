@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 * {
   margin: 0%;
   padding: 0%;
@@ -9,6 +10,9 @@
   --card-title-border-color: #746615;
   
   --bg: url(./assets/bg.svg);
+
+  --gradiente: radial-gradient(circle, rgb(242, 244, 105) 9%, rgb(7, 23, 3) 100%);
+  
 }
 body.green{
 --bg: url(./assets/bg-green.svg);
@@ -43,11 +47,31 @@ ul {
   padding-top: 52px;
 }
 
-header {
+header, h1 {
   margin-bottom: 63px;
   text-align: center;
+
+  
+  font-family: 'Bebas Neue', cursive;
+  text-transform: uppercase;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: var(--gradiente);
+  color: transparent;
+  font-size: 2.5rem;
   
 }
+
+section::after{
+  content: '';
+  height: 4px;
+  width: 100%;
+  display: block;
+
+  background-image: var(--gradiente);
+  border-radius: 0 0 4rem 4rem;
+}
+
 #cards{
   display: flex;
   flex-direction: column;
